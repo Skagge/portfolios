@@ -1,0 +1,201 @@
+@font-face {
+    font-family: CenturySchoolbook;
+    src: url(fonts/CenturySchoolbook.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: ClickerScript;
+    src: url(fonts/ClickerScript.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: CalistoMT;
+    src: url(fonts/CALIST.ttf) format('truetype');
+}
+
+body {
+    background-color: black;
+    color: white;
+    font-family: CalistoMT;
+}
+
+.main-container {
+
+}
+
+.header {
+    border-bottom: 2px solid white;
+    text-align: center;
+    font-size: 50px;;
+    font-family: ClickerScript;
+}
+
+.name {
+    font-family: CenturySchoolbook;
+}
+
+.under-name {
+    font-family: ClickerScript;
+}
+
+p {
+    margin: auto;
+}
+
+.nie {
+    text-decoration: line-through;
+}
+
+.grafika {
+    color: red;
+}
+
+.flexbox-container {
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+}
+
+.art {
+    flex: 1;
+}
+
+.art1 {
+    text-align: right;
+    margin-right: 30px;
+}
+
+.art2 {
+    font-size: 30px;
+    margin-right: 150px;
+}
+
+img {
+    filter: grayscale(100%);
+    transition: all 1s ease;
+}
+
+img:hover {
+    filter: grayscale(0%);
+    cursor: pointer;
+}
+
+.max-width {
+    max-width: 300px;
+    float: right;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 25px;
+    opacity: 0.7;
+    margin-right: 30px;
+}
+
+.max-width:hover {
+    opacity: 1;
+}
+
+.signature {
+    max-width: 300px;
+    text-align: center;
+    color: black;   
+}
+
+.signature p {
+    font-size: 20px;
+    margin-top: 6px;
+    margin-bottom: 10px;
+}
+
+.gallery {
+    margin-top: 50px;
+}
+
+.section-name {
+    text-align: center;
+    font-size: 50px;
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+}
+
+.in-section-name {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 30px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+  
+  /* Create four equal columns that sits next to each other */
+.column {
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 10px;
+}
+  
+.column img {
+    margin-top: 20px;
+    vertical-align: middle;
+    width: 100%;
+}
+
+.link-outer {
+    text-align: center;
+    margin-top: 20px;
+    transition: all 1s ease;
+}
+
+.link-inner {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    transition: all 1s ease;
+}
+
+.link-inner:hover {
+    color: red;
+}
+
+.link-outer:hover {
+    transform: scale(2);
+}
+
+@media (max-width: 800px) {
+    .flexbox-container {
+      flex-direction: column;
+    }
+
+    .art1 {
+        text-align: center;
+        margin-bottom: 30px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .art2 {
+        margin: auto;
+        text-align: justify;
+        font-size: 20px;
+        padding-left: 15;
+        padding-right: 15px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .column {
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .column {
+        flex: 100%;
+        max-width: 100%;
+    }
+}
